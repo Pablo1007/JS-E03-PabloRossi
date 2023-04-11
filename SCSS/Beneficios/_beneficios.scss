@@ -1,0 +1,35 @@
+// #bodyBeneficios {
+//     main {
+//         div {
+//             div {
+//                 img {
+//                     @include sizes(auto, 200px);
+//                 }
+//             }
+//         }
+
+//         div {
+//             iframe {
+//                 padding-bottom: 40px;
+//             }
+//         }
+
+//         div {
+//             div {
+//                 .boton {
+//                     @include sizes(140px, 40px);
+//                     border-radius: 10px;
+//                     background-color: $verde-medio;
+//                     transition: all 1s;
+
+//                     &:hover {
+//                         background-color: $verde-oscuro;
+//                         color: white;
+//                         @include sizes(160px, 60px);
+//                         margin: -10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

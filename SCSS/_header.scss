@@ -1,0 +1,72 @@
+header {
+    .sectionUno {
+        background-color: $grisoscuro;
+        
+        div {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .sectionDos {
+        background-color: $negro;
+
+        nav {
+            div {
+                ul {
+                    li {
+                        transform: skewX(-30deg);
+
+                        .select {
+                            @include text(1.25rem, $blanco);
+                        }
+
+                        a {
+                            @include sizes(150px, 50px);
+                            transition: all 1s;
+                            color: white !important;
+
+                            &:hover {
+                                background-color: $grisoscuro;
+                            }
+
+                            h2 {
+                                font-size: 1rem;
+                                margin-bottom: 0px;
+                                transform: skewX(30deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: #ffffffab !important;
+}
+
+@media (max-width: 767px) {
+    nav {
+        ul {
+            li {
+                transform: skewX(0deg) !important;
+
+                a {
+                    border-radius: 20px;
+                    width: 50vw !important;
+
+                    h2 {
+                        transform: skewX(0deg) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        padding: 0 !important;
+    }
+}

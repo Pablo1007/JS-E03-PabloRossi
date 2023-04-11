@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Italic.ttf); }
+
+.roboto {
+  font-family: "roboto"; }
+
+@font-face {
+  font-family: "bee";
+  src: url(../fonts/BreeSerif-Regular.ttf); }
+
+.bee {
+  font-family: "bee"; }
+
+@keyframes slideright {
+  from {
+    margin-left: 300%; }
+  to {
+    margin-left: 0%; } }
+
+@keyframes slideleft {
+  from {
+    margin-right: 300%; }
+  to {
+    margin-right: 0%; } }
+
+header .sectionUno {
+  background-color: #696969; }
+  header .sectionUno div p {
+    font-size: 0.8rem; }
+
+header .sectionDos {
+  background-color: #000000; }
+  header .sectionDos nav div ul li {
+    transform: skewX(-30deg); }
+    header .sectionDos nav div ul li .select {
+      font-size: 1.25rem;
+      color: #ffffff; }
+    header .sectionDos nav div ul li a {
+      width: 150px;
+      height: 50px;
+      transition: all 1s;
+      color: white !important; }
+      header .sectionDos nav div ul li a:hover {
+        background-color: #696969; }
+      header .sectionDos nav div ul li a h2 {
+        font-size: 1rem;
+        margin-bottom: 0px;
+        transform: skewX(30deg); }
+
+.navbar-toggler {
+  background-color: #ffffffab !important; }
+
+@media (max-width: 767px) {
+  nav ul li {
+    transform: skewX(0deg) !important; }
+    nav ul li a {
+      border-radius: 20px;
+      width: 50vw !important; }
+      nav ul li a h2 {
+        transform: skewX(0deg) !important; }
+  .navbar-nav {
+    padding: 0 !important; } }
+
+footer {
+  background-color: #000000 !important; }
+  footer div div ul li a:hover {
+    color: #696969 !important; }
+  footer div div hr {
+    margin-top: 0 !important; }
+
+#bodyIndex main .divDos {
+  background-image: url(../assets/images/Fondos/fondo_index2.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
+  #bodyIndex main .divDos .divUno {
+    background-color: #ffffffa6;
+    width: 60vw;
+    border-radius: 30px; }
+    #bodyIndex main .divDos .divUno .pUno {
+      font-size: 1.5rem !important;
+      animation-name: slideright;
+      animation-duration: 3s; }
+    #bodyIndex main .divDos .divUno .pDos {
+      font-size: 1.2rem !important;
+      padding-bottom: 40px;
+      animation-name: slideleft;
+      animation-duration: 4s; }
+    #bodyIndex main .divDos .divUno div .boton {
+      width: 140px;
+      height: 40px;
+      border-radius: 10px;
+      color: white;
+      background-color: #000000;
+      transition: all 1s;
+      animation-name: slideright;
+      animation-duration: 5s; }
+      #bodyIndex main .divDos .divUno div .boton:hover {
+        background-color: #696969;
+        color: black;
+        width: 160px;
+        height: 60px;
+        margin: -10px; }
+
+#bodyIndex main .servicios {
+  background-color: rgba(255, 255, 255, 0.236);
+  border-radius: 30px; }
+
+#bodyIndex main .descrip .descripTexto, #bodyIndex main .descrip .descripTexto--verde {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0;
+  text-align: center;
+  padding-top: 1.5rem; }
+
+#bodyIndex main .descrip .descripTexto--verde {
+  font-size: 1.5rem;
+  color: white; }
+
+#bodyIndex main .descrip p {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center; }
+
+#bodyIndex main section b {
+  font-size: 1.5rem;
+  color: black; }
+
+#bodyIndex main section p {
+  font-size: 1.2rem;
+  color: black; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem !important;
+  height: 4rem !important;
+  background-size: 200% 200% !important; }
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: .8 !important; }
+
+@media (min-width: 992px) {
+  #bodyIndex main .divDos {
+    background-size: 100% auto !important; }
+  #bodyIndex main .pad {
+    padding: 100px 0px; }
+    #bodyIndex main .pad div {
+      padding: 100px 0px; } }
+
+@media (max-width: 576px) {
+  #bodyIndex main div h5 {
+    font-size: 0.75rem !important; }
+  #bodyIndex header section div p {
+    font-size: 0.75rem; } }
+
+.tarjetaProducto {
+  border: 1px solid #949494;
+  padding: 10px;
+  margin: 20px 10px 10px 10px;
+  border-radius: 10px; }
+
+.tituloProducto {
+  font-size: 1rem; }
+
+.imagenProducto {
+  height: 100px;
+  width: 100px; }
+
+.categoriaProducto {
+  font-size: 0.8rem; }
+
+.precioProducto {
+  font-size: 1.5rem; }
+
+.botonProducto {
+  font-size: 1rem;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: #000000; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.py-7 {
+  padding: 7rem 0rem; }
+
+.bg-gris {
+  background-color: #dcdcdc; }
+
+.posh1 {
+  top: -1000px; }
+
+.agrandado:hover {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #dcdcdc;
+  -webkit-box-shadow: 0px 0px 15px 15px #dcdcdc; }
+
+.construccion {
+  background-image: url(../assets/images/Fondos/fondo_index2.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.textoConstruccion {
+  background-color: #ffffffa6;
+  width: 80vw;
+  border-radius: 30px;
+  font-size: 2rem; }
+
+#carrito {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #949494;
+  border-radius: 10px; }

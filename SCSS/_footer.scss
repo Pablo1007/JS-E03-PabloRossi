@@ -1,0 +1,21 @@
+footer {
+    background-color: $negro !important;
+
+    div {
+        div {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $grisoscuro !important;
+                        }
+                    }
+                }
+            }
+
+            hr {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+#bodyIndex {
+    main {
+        .divDos {
+            background-image: url(../assets/images/Fondos/fondo_index2.jpg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+
+            .divUno {
+                background-color: #ffffffa6;
+                width: 60vw;
+                border-radius: 30px;
+
+
+                .pUno {
+                    font-size: 1.5rem !important;
+                    @include animation(slideright,3s);
+                }
+
+                .pDos {
+                    font-size: 1.2rem !important;
+                    padding-bottom: 40px;
+                    @include animation(slideleft,4s);
+                }
+
+                div {
+                    .boton {
+                        @include sizes(140px, 40px);
+                        border-radius: 10px;
+                        color: white;
+                        background-color: $negro;
+                        transition: all 1s;
+                        @include animation(slideright,5s);
+
+                        &:hover {
+                            background-color: $grisoscuro;
+                            color: black;
+                            @include sizes(160px, 60px);
+                            margin: -10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .servicios {
+            background-color: rgba(255, 255, 255, 0.236);
+            border-radius: 30px;
+        }
+
+        .descrip {
+            .descripTexto {
+                @include text(1.5rem, black);
+                margin: 0;
+                text-align: center;
+                padding-top: 1.5rem;
+            }
+
+            .descripTexto--verde {
+                @extend .descripTexto;
+                // background-color: $verde-medio;
+                @include text(1.5rem, white);
+            }
+
+            p {
+                @include text(1.2rem, black);
+                text-align: center;
+            }
+        }
+
+        section {
+            b {
+                @include text(1.5rem, black);
+            }
+
+            p {
+                @include text(1.2rem, black);
+            }
+        }
+    }
+}
+
+// cambio de flechas carrousel
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 4rem !important;
+    height: 4rem !important;
+    background-size: 200% 200% !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: .8 !important;
+}
+
+
+@media (min-width: 992px) {
+    #bodyIndex {
+        main {
+            .divDos {
+                background-size: 100% auto !important;
+            }
+
+            .pad {
+                padding: 100px 0px;
+
+                div {
+                    padding: 100px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #bodyIndex {
+        main {
+            div {
+                h5 {
+                    font-size: 0.75rem !important;
+                }
+            }
+        }
+
+        header {
+            section {
+                div {
+                    p {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}

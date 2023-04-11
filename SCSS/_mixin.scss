@@ -1,0 +1,14 @@
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text($fontsize, $color) {
+    font-size: $fontsize;
+    color: $color;
+}
+
+@mixin animation($animation, $time) {
+    animation-name: $animation;
+    animation-duration: $time;
+}

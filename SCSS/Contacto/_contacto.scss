@@ -1,0 +1,63 @@
+// #bodyContacto {
+//     main {
+//         div {
+//             div {
+//                 div {
+//                     div {
+//                         img {
+//                             @include sizes(auto, 150px);
+//                         }
+//                     }
+
+//                     div {
+//                         h4 {
+//                             padding: 0px 10px;
+//                             font-size: 1.5rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 576px) {
+//     .bajarForm {
+//         flex-direction: column;
+//     }
+// }
+
+// @media (max-width: 992px) {
+//     #bodyContacto {
+//         main {
+//             padding: 0px 0px 20px 0px;
+
+//             div {
+//                 div {
+//                     div {
+//                         flex-direction: column;
+
+//                         .pri {
+//                             order: 1;
+//                         }
+
+//                         .seg {
+//                             order: 2;
+
+//                             h4 {
+//                                 text-align: center;
+//                                 padding-bottom: 10px;
+//                             }
+//                         }
+
+//                         div {
+//                             img {
+//                                 margin: 15px 0px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

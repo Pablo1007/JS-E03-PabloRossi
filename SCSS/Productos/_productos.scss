@@ -1,0 +1,48 @@
+// bordes redondos de las imagenes de main
+
+// .bordeRedondo {
+//     border-radius: 25px !important;
+// }
+
+// .btn-primary {
+//     --bs-btn-bg: #009929 !important;
+//     --bs-btn-border-color: #009929 !important;
+//     --bs-btn-hover-bg: #dcdcdc !important;
+//     --bs-btn-hover-border-color: #dcdcdc !important;
+//     --bs-btn-active-bg: #dcdcdc !important;
+//     --bs-btn-active-border-color: #dcdcdc !important;
+// }
+
+.tarjetaProducto{
+    border: 1px solid rgb(148, 148, 148);
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.tituloProducto{
+    font-size: 1rem;
+}
+
+.imagenProducto{
+    height: 100px;
+    width: 100px;
+}
+
+.categoriaProducto{
+    font-size: 0.8rem;
+}
+
+.precioProducto{
+    font-size: 1.5rem;
+
+}
+
+.botonProducto{
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: $negro;
+}

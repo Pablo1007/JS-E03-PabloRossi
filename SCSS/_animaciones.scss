@@ -1,0 +1,22 @@
+@keyframes slideright {
+    from {
+      margin-left: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  @keyframes slideleft {
+    from {
+      margin-right: 300%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
+
+
+
