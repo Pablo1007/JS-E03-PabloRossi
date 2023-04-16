@@ -107,45 +107,59 @@
 
     <!-- main -->
 
-    <main class="container-fluid h-auto pt-2 d-flex justify-content-center align-items-center construccion">
-    
-        <div style="width: 50vw;height: 80vh;" class="row d-flex justify-content-center align-items-center py-7 ">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-5 textoConstruccion">
-                <p class="col-12 text-center bee">SITIO EN CONSTRUCCION</p>
+    <main class="container-fluid h-auto pt-2 d-flex flex-column construccion align-items-center" id="main">
+        <div id="inicio">
+            <div style="width: 50vw;height: 80vh;" class="d-flex align-items-center flex-column justify-content-center">
+                <div class="textoConstruccion">
+                    <p class="h4 text-center py-5">Para poder ver productos y lista de precio debe iniciar sesion</p>
+                    <div class="d-flex flex-column align-items-center">
+                        <input class="h4 dato" type="text" placeholder="Usuario" id="usuario">
+                        <input class="h4 dato" type="text" placeholder="Contraseña" id="contraseña">
+                        <input class="h4 inicioSesion text-white" type="button" value="Iniciar Sesion" id="iniciarSesion">
+                    </div>
+                </div>
             </div>
         </div>
-        
        
-       
-       
-       
-       
-        <!-- <p class="d-flex justify-content-center align-items-center">CARRITO</p>            
-        <div id="carrito">
+        <div class="ocultar container-fluid" id="ingresado">
+
+                <div>
+                    <div class="row d-flex justify-content-center py-4">
+                        <input placeholder="Busca tu producto" class="col-6 botonProducto mx-2" id="barraBuscador">
+                        <button class="col-1 botonProducto" id="botonBuscar">Buscar</button>
+                        <button class = "col-1 botonProducto mx-5" id="botonCarrito">carrito</button>
+                    </div>
+                    <div class="ocultar" id="carritoDiv">
+                        <p class="d-flex justify-content-center align-items-center">CARRITO</p>            
+                        <div id="carrito">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center py-3 col-12">
+                            <input type="button" value="Finalizar compra" id="comprar" class="botonProducto col-4 mx-2">
+                            <input type="button" value="Borrar carrito" id="borrar" class="botonProducto col-4 mx-2">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <section class="filtro col-2 d-flex flex-column">
+                        <div class="d-flex flex-column">
+                            <p class="h4">Filtrado por categoria</p>
+                            <hr>
+                            <label><input class="input" type="checkbox" name="cerveza" id="cerveza"> Cervezas</label>
+                            <label><input class="input" type="checkbox" name="aperitivo" id="aperitivo"> Aperitivos</label>
+                        <label><input class="input" type="checkbox" name="gaseosa" id="gaseosa"> Gaseosas</label>
+                        <label><input class="input" type="checkbox" name="whiskey" id="whiskey"> Whiskeys</label>
+                    </div>
+                </section>
+                <section id="productos" class="col-10 row align-items-center justify-content-around d-flex pt-3">
+                    
+                </section>
+            </div>
         </div>
-
-
-
-
-        <div class="row d-flex justify-content-center py-4 bg-gris">
-            <input placeholder="Busca tu producto" class="col-6" id="buscador">
-            <button class="col-1" id="buscar">Buscar</button>
-        </div>
-        <div class="row">
-            <section class="filtro col-2 bg-gris">
-
-
-            </section>
-            <section id="productos" class="col-10 row align-items-center justify-content-around d-flex pt-3">
-                
-                
-            </section>
-        </div> -->
-            
         </main>
         
-    <!-- footer -->
-
+        <!-- footer -->
+        
     <footer class="container-fluid h-auto">
         <div class="row h-100 text-light pt-3">
 
@@ -164,7 +178,7 @@
                 <hr width="70%">
                 <ul class="list-unstyled">
                     <li><a href="https://wa.me/3415159035" target="_blank"
-                            class="text-decoration-none  text-white">+341-xxxxxxx</a></li>
+                        class="text-decoration-none  text-white">whatsapp - 3415159035</a></li>
                     <li>ventas@delparquebebidas.com.ar</li>
                 </ul>
             </div>
