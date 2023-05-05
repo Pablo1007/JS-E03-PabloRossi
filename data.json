@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lata Stella Artois",
+        "categoria": "cerveza",
+        "precio": 300,
+        "stock": 5,
+        "img": "../assets/images/Productos/lata-stella.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "fernet Branca",
+        "categoria": "aperitivo",
+        "precio": 2000,
+        "stock": 7,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_787875-MLA54546335091_032023-O.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Lata coca-cola",
+        "categoria": "gaseosa",
+        "precio": 400,
+        "stock": 6,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/861/458/products/340341-3359c763f08b338b2b15680466868435-640-0.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Lata Fanta",
+        "categoria": "gaseosa",
+        "precio": 300,
+        "stock": 4,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_814829-MLA44824212032_022021-O.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Lata Andes",
+        "categoria": "cerveza",
+        "precio": 250,
+        "stock": 1,
+        "img": "data:image/jpeg;base64,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"
+    },
+    {
+        "id": 6,
+        "nombre": "Gin salvaje",
+        "categoria": "aperitivo",
+        "precio": 3000,
+        "stock": 7,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/211/660/products/la-salvaje1-bd625ad57fb631d22316384799814252-640-0.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Lata Sprite",
+        "categoria": "gaseosa",
+        "precio": 350,
+        "stock": 10,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/144/045/products/584dan-lata-sprite-x-354-cc1-2bbe26eafb3394483516651722300160-640-0.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Lata Temple",
+        "categoria": "cerveza",
+        "precio": 400,
+        "stock": 14,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/138/589/products/wolf-ipa1-d2ad17bc74ec2c202415895600325821-640-0.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Campari",
+        "categoria": "aperitivo",
+        "precio": 1500,
+        "stock": 8,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_608467-MLA42667069886_072020-O.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Jameson",
+        "categoria": "whiskey",
+        "precio": 4000,
+        "stock": 10,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_978110-MLA51279949186_082022-O.jpg"
+    }
+]

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Querés comprar bebida al mejor precio? escribinos ya!">
+    <meta name="description" content="Querés comprar bebida al mejor precio? escribinos ya!">
     <meta name="keywords"
         content="bebidas coca cola fernet matorista almacen del parque bebidas cerveza latas stella quilmes bajo precio">
-        <link rel="shortcut icon" href="../assets/images/Favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/Favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -53,8 +53,7 @@
             <!-- logo -->
 
             <div class="col-12 col-lg-2 d-flex justify-content-center py-2 logo">
-                <img src="../assets/images/Logo/Logo.png" alt="Del Parque Bebidas" height="60px"
-                    width="auto">
+                <img src="../assets/images/Logo/Logo.png" alt="Del Parque Bebidas" height="60px" width="auto">
             </div>
 
             <!-- barra -->
@@ -115,51 +114,119 @@
                     <div class="d-flex flex-column align-items-center">
                         <input class="h4 dato" type="text" placeholder="Usuario" id="usuario">
                         <input class="h4 dato" type="text" placeholder="Contraseña" id="contraseña">
-                        <input class="h4 inicioSesion text-white" type="button" value="Iniciar Sesion" id="iniciarSesion">
+                        <input class="h4 inicioSesion text-white" type="button" value="Iniciar Sesion"
+                            id="iniciarSesion">
                     </div>
                 </div>
             </div>
         </div>
-       
+
+        <button class="col-6 botonProducto mx-5 ocultar" id="cerrarSesion">Cerrar Sesion</button>
         <div class="ocultar container-fluid" id="ingresado">
 
-                <div>
-                    <div class="row d-flex justify-content-center py-4">
-                        <input placeholder="Busca tu producto" class="col-6 botonProducto mx-2" id="barraBuscador">
-                        <button class="col-1 botonProducto" id="botonBuscar">Buscar</button>
-                        <button class = "col-1 botonProducto mx-5" id="botonCarrito">carrito</button>
+            <div>
+                <div class="row d-flex justify-content-center py-4">
+                    <input placeholder="Busca tu producto" class="col-6 botonProducto mx-2" id="barraBuscador">
+                    <button class="col-1 botonProducto" id="botonBuscar">Buscar</button>
+                    <button class="col-1 botonProducto mx-5" id="botonCarrito">carrito</button>
+
+                </div>
+                <div class="ocultar" id="carritoDiv">
+                    <p class="d-flex justify-content-center align-items-center">CARRITO</p>
+                    <hr>
+                    <div id="carrito" class="h-auto">
                     </div>
-                    <div class="ocultar" id="carritoDiv">
-                        <p class="d-flex justify-content-center align-items-center">CARRITO</p>            
-                        <div id="carrito">
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center py-3 col-12">
-                            <input type="button" value="Finalizar compra" id="comprar" class="botonProducto col-4 mx-2">
-                            <input type="button" value="Borrar carrito" id="borrar" class="botonProducto col-4 mx-2">
-                            
-                        </div>
+                    <div class="d-flex justify-content-center align-items-center py-3 col-12">
+                        <input type="button" value="Finalizar compra" id="comprar" class="botonProducto col-4 mx-2">
+                        <input type="button" value="Borrar carrito" id="borrar" class="botonProducto col-4 mx-2">
+
                     </div>
                 </div>
-                <div class="row">
-                    <section class="filtro col-2 d-flex flex-column">
-                        <div class="d-flex flex-column">
-                            <p class="h4">Filtrado por categoria</p>
-                            <hr>
-                            <label><input class="input" type="checkbox" name="cerveza" id="cerveza"> Cervezas</label>
-                            <label><input class="input" type="checkbox" name="aperitivo" id="aperitivo"> Aperitivos</label>
+            </div>
+            <div class="row">
+                <section class="filtro col-2 d-flex flex-column">
+                    <div class="d-flex flex-column">
+                        <p class="h4">Filtrado por categoria</p>
+                        <hr>
+                        <label><input class="input" type="checkbox" name="cerveza" id="cerveza"> Cervezas</label>
+                        <label><input class="input" type="checkbox" name="aperitivo" id="aperitivo"> Aperitivos</label>
                         <label><input class="input" type="checkbox" name="gaseosa" id="gaseosa"> Gaseosas</label>
                         <label><input class="input" type="checkbox" name="whiskey" id="whiskey"> Whiskeys</label>
                     </div>
                 </section>
                 <section id="productos" class="col-10 row align-items-center justify-content-around d-flex pt-3">
-                    
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div style="height: 200px;"
+                            class="col-2 tarjetaProducto d-flex align-items-center justify-content-center shadow">
+                            <div class="spinner-border text-danger tarjetaProducto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-        </main>
-        
-        <!-- footer -->
-        
+    </main>
+
+    <!-- footer -->
+
     <footer class="container-fluid h-auto">
         <div class="row h-100 text-light pt-3">
 
@@ -178,7 +245,7 @@
                 <hr width="70%">
                 <ul class="list-unstyled">
                     <li><a href="https://wa.me/3415159035" target="_blank"
-                        class="text-decoration-none  text-white">whatsapp - 3415159035</a></li>
+                            class="text-decoration-none  text-white">whatsapp - 3415159035</a></li>
                     <li>ventas@delparquebebidas.com.ar</li>
                 </ul>
             </div>
@@ -200,14 +267,15 @@
         </div>
     </footer>
     <div class="position-fixed p-3 bottom-0 end-0">
-        <a href="https://wa.me/3415159035" target="_blank"><img src="../assets/images/logowhatsapp.png" alt="del parque bebidas"
-                height="90px" width="auto" class="agrandado"></a>
+        <a href="https://wa.me/3415159035" target="_blank"><img src="../assets/images/logowhatsapp.png"
+                alt="del parque bebidas" height="90px" width="auto" class="agrandado"></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="../js/script.js"></script>
 
 </html>
